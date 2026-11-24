@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net11.0</TargetFramework>
+    <AssemblyName>Inlayo-launcher</AssemblyName>
+    <RootNamespace>Inlayo.Launcher</RootNamespace>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <DebugType>none</DebugType>
+    <OptimizationPreference>Size</OptimizationPreference>
+    <PublishAot>false</PublishAot>
+    <SelfContained>false</SelfContained>
+    <PublishSingleFile Condition="'$(RuntimeIdentifier)' == 'win-x86'">true</PublishSingleFile>
+  </PropertyGroup>
+</Project>
