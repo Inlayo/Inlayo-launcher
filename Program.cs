@@ -63,7 +63,7 @@ internal static class Program
         StartProcess(osuStartInfo, "Couldn't start osu!. Check that osu!.exe still exists.");
 
         var patcherPath = Path.Combine(Path.GetTempPath(), "Inlayo-patcher.exe");
-        var launchDelay = Task.Delay(TimeSpan.FromSeconds(10));
+        var launchDelay = Task.Delay(TimeSpan.FromSeconds(5));
         var patcherDownload = DownloadPatcherAsync(patcherPath);
         await Task.WhenAny(launchDelay, patcherDownload);
         if (patcherDownload.IsCompleted)
